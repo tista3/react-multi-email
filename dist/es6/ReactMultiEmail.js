@@ -5,7 +5,7 @@ class ReactMultiEmail extends React.Component {
         super(props);
         this.state = {
             focused: false,
-            emails: [],
+            emails: props.emails || [],
             inputValue: '',
         };
         this.findEmailAddress = (value, isEnter) => {
@@ -112,7 +112,7 @@ class ReactMultiEmail extends React.Component {
         this.handleOnFocus = () => this.setState({
             focused: true,
         });
-        this.emailInputRef = React.createRef();
+        //this.emailInputRef = React.createRef();
     }
     static getDerivedStateFromProps(nextProps, prevState) {
         if (prevState.propsEmails !== nextProps.emails) {
