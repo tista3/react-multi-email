@@ -18,7 +18,7 @@ var ReactMultiEmail = /** @class */ (function (_super) {
         var _this = _super.call(this, props) || this;
         _this.state = {
             focused: false,
-            emails: [],
+            emails: props.emails || [],
             inputValue: '',
         };
         _this.findEmailAddress = function (value, isEnter) {
@@ -126,7 +126,7 @@ var ReactMultiEmail = /** @class */ (function (_super) {
                 focused: true,
             });
         };
-        _this.emailInputRef = React.createRef();
+        //_this.emailInputRef = React.createRef();
         return _this;
     }
     ReactMultiEmail.getDerivedStateFromProps = function (nextProps, prevState) {
