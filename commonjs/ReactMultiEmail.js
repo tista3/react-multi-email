@@ -1,6 +1,6 @@
 "use strict";
 
-import createRef from 'react-create-ref'
+const createRef = require('react-create-ref')
 
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||

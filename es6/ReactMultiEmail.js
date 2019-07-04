@@ -1,4 +1,4 @@
-import createRef from 'react-create-ref'
+const createRef = require('react-create-ref')
 
 import * as React from 'react';
 import isEmailFn from './isEmail';
