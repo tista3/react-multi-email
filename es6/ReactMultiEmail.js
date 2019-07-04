@@ -1,3 +1,5 @@
+import createRef from 'react-create-ref'
+
 import * as React from 'react';
 import isEmailFn from './isEmail';
 class ReactMultiEmail extends React.Component {
@@ -113,6 +115,7 @@ class ReactMultiEmail extends React.Component {
             focused: true,
         });
         //this.emailInputRef = React.createRef();
+        _this.emailInputRef = createRef();
     }
     static getDerivedStateFromProps(nextProps, prevState) {
         if (prevState.propsEmails !== nextProps.emails) {

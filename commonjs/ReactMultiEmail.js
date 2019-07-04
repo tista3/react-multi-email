@@ -1,4 +1,7 @@
 "use strict";
+
+import createRef from 'react-create-ref'
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -127,6 +130,7 @@ var ReactMultiEmail = /** @class */ (function (_super) {
             });
         };
         //_this.emailInputRef = React.createRef();
+        _this.emailInputRef = createRef();
         return _this;
     }
     ReactMultiEmail.getDerivedStateFromProps = function (nextProps, prevState) {
